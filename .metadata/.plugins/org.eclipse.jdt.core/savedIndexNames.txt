@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+F:\HIT\JAVA_HIT_2020\.metadata\.plugins\org.eclipse.jdt.core
+466175492.index
