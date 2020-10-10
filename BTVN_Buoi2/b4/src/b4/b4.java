@@ -27,9 +27,9 @@ public class b4 {
 		int prime[] = new int[length];
 		int j = 0;
 		for(int i = 0; i < arr.length; i++) {
-			if(isPrime(arr[i])==true) {
+			while(isPrime(j)) {
 				prime[j] = arr[i];
-				j++;
+				j++;					
 			}
 		}	
 		return prime;
