@@ -51,6 +51,7 @@ public class Sach {
 	public Sach() {
 	}
 	
+	@SuppressWarnings("resource")
 	public void Nhap() {
 			Scanner scan = new Scanner(System.in); 
 			System.out.print("Nhap vao ten sach: ");
@@ -63,15 +64,13 @@ public class Sach {
 			giaTien = scan.nextInt();
 			System.out.print("Nhap vao so trang: ");
 			soTrang = scan.nextInt();
-		
 	}
 	@Override
 	public String toString() {
-		return "maSach=" + maSach + ", tenSach=" + tenSach + ", NXB=" + NXB + ", soTrang=" + soTrang
-				+ ", giaTien=" + giaTien + "]";
+		return "maSach=" + maSach + ", tenSach=" + tenSach + ", NXB=" + NXB + ", soTrang=" + soTrang+ ", giaTien=" + giaTien ;
 	}
 	public void Xuat() {
-		System.out.println("maSach=" + maSach + ", tenSach=" + tenSach + ", NXB=" + NXB + ", soTrang=" + soTrang+ ", giaTien=" + giaTien + "]");
+		System.out.println("maSach=" + maSach + ", tenSach=" + tenSach + ", NXB=" + NXB + ", soTrang=" + soTrang+ ", giaTien=" + giaTien );
 	}
 	
 	

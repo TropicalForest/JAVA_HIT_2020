@@ -1,9 +1,9 @@
-package Bai2;
+package Bai3;
 
 public class RunMain {
 	public static void main(String[] args) {
-		NhanSu x = new NhanSu();
-		x.nhap();
-		x.xuat();
+		Phieu p = new Phieu();
+		p.nhap();
+		p.xuat();
 	}
 }

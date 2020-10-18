@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class RunMain {
 	public static void main(String[] args) {
 		int n;
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Nhap vao so luong sach: ");
 		n = scan.nextInt();

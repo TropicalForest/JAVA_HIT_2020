@@ -3,44 +3,43 @@ package Bai2;
 import java.util.Scanner;
 
 public class NhanSu {
+	static 	Scanner scan = new Scanner(System.in);
 	private String maNhanSu;
 	private String hoTen;
 	private Date NS;
-	
-	
-	public String getMaNhanSu() {
-		return maNhanSu;
+
+
+	public void nhap() {
+		System.out.println("Nhap thong tin nhan su");
+		NS = new Date();
+		System.out.print("Nhap ma nhan su: ");
+		this.maNhanSu = scan.nextLine();
+		System.out.print("Nhap ho ten: ");
+		this.hoTen = scan.nextLine();
+		System.out.println("Nhap ngay, thang, nam sinh:  ");
+		NS.nhap(); 
 	}
-	public void setMaNhanSu(String maNhanSu) {
-		this.maNhanSu = maNhanSu;
-	}
-	public String getHoTen() {
-		return hoTen;
-	}
-	public void setHoTen(String hoTen) {
-		this.hoTen = hoTen;
+
+	public void xuat() {
+		System.out.println("Thong tin nhan su: ");
+		System.out.print("MaNhanSu= " + maNhanSu + ", hoTen= " + hoTen );
+		NS.xuat();
 	}
 
 	public NhanSu(String maNhanSu, String hoTen, Date nS) {
+		super();
 		this.maNhanSu = maNhanSu;
 		this.hoTen = hoTen;
 		NS = nS;
 	}
+
 	public NhanSu() {
-	}
-	public void nhap() {
-		Scanner scan = new Scanner(System.in);
-		Date NS = new Date();
-		System.out.print("Nhap ma nhan su: ");
-		maNhanSu = scan.nextLine();
-		System.out.print("Nhap ho ten: ");
-		hoTen = scan.nextLine();				
-		NS.nhap();
+		super();
 	}
 	
-	public void xuat() {
-		System.out.println(NS.toString() + ", maNhanSu=" + maNhanSu + ", hoTen=" + hoTen );
-	}
+	
+	
+
 
 	
 	
