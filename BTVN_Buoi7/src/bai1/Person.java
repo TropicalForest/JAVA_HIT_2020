@@ -1,3 +1,4 @@
+package bai1;
 
 public abstract class Person {
 	private String name;

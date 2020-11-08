@@ -1,3 +1,4 @@
+package bai1;
 import java.util.Scanner;
 
 public class Customer extends Person{
